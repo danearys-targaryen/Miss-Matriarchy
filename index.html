@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Miss Matriarchy</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+font-family:'Inter',sans-serif;
+background:#fff8fc;
+color:#3a2d2f;
+line-height:1.7;
+overflow-x:hidden;
+}
+.hero{
+min-height:100vh;
+padding:40px 8%;
+background:
+linear-gradient(rgba(250,240,236,0.72), rgba(250,240,236,0.78)),
+url('https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+}
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:120px;
+flex-wrap:wrap;
+gap:20px;
+}
+.logo-wrap{
+display:flex;
+align-items:center;
+gap:18px;
+}
+.logo{
+width:70px;
+height:70px;
+}
+.brand{
+font-family:'Copperplate', serif;
+font-size:2rem;
+letter-spacing:2px;
+font-weight:600;
+color:#b84d7e;
+}
+nav ul{
+display:flex;
+gap:24px;
+list-style:none;
+flex-wrap:wrap;
+}
+nav a{
+text-decoration:none;
+color:#6a4a57;
+font-size:0.95rem;
+}
+.hero-content{
+max-width:760px;
+margin-top:70px;
+}
+.hero-content h1{
+font-family:'Copperplate', serif;
+font-size:6rem;
+line-height:0.95;
+color:#b84d7e;
+margin-bottom:30px;
+}
+.hero-content p{
+font-size:1.15rem;
+max-width:640px;
+margin-bottom:40px;
+color:#5f4750;
+}
+.buttons{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+}
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:8px;
+text-decoration:none;
+}
+.primary{
+background:#d978a4;
+color:white;
+}
+.secondary{
+border:1px solid #d978a4;
+color:#9c5f79;
+background:rgba(255,255,255,0.5);
+}
+section{
+padding:100px 8%;
+}
+.section-title{
+font-family:'Copperplate', serif;
+font-size:3.5rem;
+margin-bottom:18px;
+color:#b84d7e;
+}
+.section-sub{
+max-width:700px;
+margin-bottom:55px;
+color:#5c4a4e;
+}
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+}
+.card{
+background:rgba(255,255,255,0.65);
+padding:35px;
+border-radius:18px;
+border:1px solid rgba(180,120,140,0.18);
+box-shadow:0 10px 30px rgba(92,60,70,0.06);
+}
+.card h3{
+font-family:'Copperplate', serif;
+font-size:2rem;
+margin-bottom:14px;
+color:#b84d7e;
+}
+.comparison{
+background:#ffe4ef;
+}
+.comparison-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:35px;
+margin-top:40px;
+}
+.box{
+background:white;
+padding:35px;
+border-radius:18px;
+}
+.box h3{
+font-family:'Copperplate', serif;
+font-size:2rem;
+margin-bottom:20px;
+color:#b84d7e;
+}
+.quote{
+background:#6f4458;
+color:white;
+text-align:center;
+padding:120px 10%;
+}
+.quote blockquote{
+font-family:'Copperplate', serif;
+font-size:3rem;
+line-height:1.3;
+max-width:900px;
+margin:auto;
+}
+.footer{
+background:#6f4458;
+color:#fff0f6;
+padding:45px;
+text-align:center;
+}
+.footer-links{
+margin-top:18px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+.footer a{
+color:#ffd6e6;
+text-decoration:none;
+}
+@media(max-width:900px){
+.hero-content h1{font-size:4rem;}
+.comparison-grid{grid-template-columns:1fr;}
+}
+@media(max-width:700px){
+.hero-content h1{font-size:3rem;}
+.section-title{font-size:2.5rem;}
+.quote blockquote{font-size:2rem;}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+
+<nav>
+
+<div class="logo-wrap">
+
+<svg class="logo" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="100" y1="25" x2="100" y2="150" stroke="#d978a4" stroke-width="5"/>
+<line x1="40" y1="55" x2="160" y2="55" stroke="#d978a4" stroke-width="5"/>
+<circle cx="100" cy="25" r="10" fill="#d978a4"/>
+<line x1="60" y1="55" x2="45" y2="95" stroke="#d978a4" stroke-width="3"/>
+<line x1="140" y1="55" x2="155" y2="95" stroke="#d978a4" stroke-width="3"/>
+<path d="M25 100 Q45 130 65 100" stroke="#d978a4" stroke-width="4" fill="none"/>
+<path d="M135 100 Q155 130 175 100" stroke="#d978a4" stroke-width="4" fill="none"/>
+<circle cx="45" cy="88" r="12" stroke="#d978a4" stroke-width="3"/>
+<line x1="45" y1="100" x2="45" y2="118" stroke="#d978a4" stroke-width="3"/>
+<line x1="37" y1="110" x2="53" y2="110" stroke="#d978a4" stroke-width="3"/>
+<circle cx="155" cy="88" r="12" stroke="#d978a4" stroke-width="3"/>
+<line x1="163" y1="80" x2="176" y2="67" stroke="#d978a4" stroke-width="3"/>
+<line x1="168" y1="67" x2="176" y2="67" stroke="#d978a4" stroke-width="3"/>
+<line x1="176" y1="67" x2="176" y2="75" stroke="#d978a4" stroke-width="3"/>
+</svg>
+
+<div class="brand">MISS MATRIARCHY</div>
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Women in History</a></li>
+<li><a href="feminism.html">Feminism Explained</a></li>
+<li><a href="#">Society & Psychology</a></li>
+<li><a href="misogyny.html">Misogyny & Misandry</a></li>
+<li><a href="#">Modern World</a></li>
+</ul>
+
+</nav>
+
+<div class="hero-content">
+<h1>Understanding women means understanding society.</h1>
+
+<p>
+A modern editorial platform exploring women’s history, feminism,
+social structures, stereotypes and the psychology behind the world we live in today.
+</p>
+
+<div class="buttons">
+<a href="#" class="btn primary">Explore Articles</a>
+<a href="#" class="btn secondary">Women’s History</a>
+</div>
+
+</div>
+
+</header>
+
+<section>
+
+<h2 class="section-title">Featured Topics</h2>
+
+<p class="section-sub">
+Exploring the historical, psychological and cultural structures that shaped
+women’s lives and continue to influence society today.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Women in History</h3>
+<p>
+Strong female figures, forgotten voices, historical roles and the evolution
+of women’s rights throughout different civilizations and eras.
+</p>
+</div>
+
+<div class="card">
+<h3>Feminism Explained.</h3>
+<p>
+The origins of feminism, its historical waves, modern misunderstandings
+and why equality was always its central purpose and its possitive effects on men.
+</p>
+</div>
+
+<div class="card">
+<h3>Society & Psychology</h3>
+<p>
+Beauty standards, stereotypes, internet culture and the psychology
+behind social expectations placed on both women and men.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="comparison">
+
+<h2 class="section-title">Misogyny & Misandry</h2>
+
+<p class="section-sub">
+Understanding the differences, historical context and social impact of gender-based prejudice
+through a balanced and analytical perspective.
+</p>
+
+<div class="comparison-grid">
+
+<div class="box">
+<h3>Misogyny</h3>
+<p>
+Exploring the historical and structural prejudice against women,
+how it developed throughout history and the ways it still appears
+in modern society, media and online culture.
+</p>
+</div>
+
+<div class="box">
+<h3>Misandry</h3>
+<p>
+Discussing prejudice against men, social expectations around masculinity,
+emotional suppression and how stereotypes can negatively affect men as well.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Then vs Now</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Then</h3>
+<p>
+Women excluded from education, restrictive beauty ideals,
+limited political participation and rigid gender expectations and being killed for defying social expectations.
+</p>
+</div>
+
+<div class="card">
+<h3>Now</h3>
+<p>
+Social media pressure, online gender polarization, beauty standards,
+career stereotypes and modern discussions around equality.
+</p>
+</div>
+
+<div class="card">
+<h3>Why It Matters</h3>
+<p>
+Understanding how historical structures continue to shape modern thinking,
+relationships and the way society defines gender roles today.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="quote">
+
+<blockquote>
+“Equality is not about superiority.
+It is about humanity.”
+</blockquote>
+
+</section>
+
+<footer class="footer">
+
+<h3>MISS MATRIARCHY</h3>
+
+<div class="footer-links">
+<a href="#">Instagram</a>
+<a href="#">TikTok</a>
+<a href="#">Pinterest</a>
+<a href="#">Newsletter</a>
+<a href="#">Contact</a>
+</div>
+
+</footer>
+
+</body>
+</html>
