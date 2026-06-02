@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,8 @@
 
 <style>
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap');
+
 body{
 margin:0;
 background:#fff8fc;
@@ -17,21 +18,37 @@ font-family:Georgia,serif;
 line-height:1.9;
 }
 
-nav{
+header{
+padding:40px 8%;
+background:linear-gradient(135deg,#f7c4da,#f2a7c4,#de7fa8);
+color:white;
+border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+.nav-top{
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:35px 8%;
-background:rgba(255,255,255,0.55);
-flex-wrap:wrap;
-gap:20px;
+margin-bottom:40px;
+}
+
+.logo-wrap{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.logo{
+width:70px;
+height:70px;
 }
 
 .brand{
 font-family:'Copperplate', serif;
-font-size:1.8rem;
+font-size:2rem;
 letter-spacing:2px;
-color:#b84d7e;
+font-weight:600;
+color:white;
 }
 
 nav ul{
@@ -43,25 +60,25 @@ flex-wrap:wrap;
 
 nav a{
 text-decoration:none;
-color:#6a4a57;
+color:rgba(255,255,255,0.9);
 font-size:0.95rem;
 }
 
-header{
-padding:110px 12%;
-background:linear-gradient(135deg,#f7c4da,#f2a7c4,#de7fa8);
+nav a:hover{
 color:white;
 }
 
-h1{
-font-size:4.5rem;
+.page-title{
+font-size:3.5rem;
 margin:0;
+color:white;
 }
 
-.subtitle{
+.page-subtitle{
 max-width:760px;
-font-size:1.2rem;
-margin-top:25px;
+font-size:1.1rem;
+margin-top:15px;
+color:rgba(255,255,255,0.95);
 }
 
 section{
@@ -104,16 +121,6 @@ grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
 gap:28px;
 }
 
-.tag{
-display:inline-block;
-background:#ffe1ee;
-color:#bf4c7f;
-padding:8px 16px;
-border-radius:999px;
-margin-bottom:20px;
-font-size:0.85rem;
-}
-
 .didyouknow{
 background:#fff0f6;
 border-left:5px solid #de7fa8;
@@ -134,10 +141,14 @@ footer{
 text-align:center;
 padding:70px;
 color:#866471;
-font-family:'Copperplate', serif;
-letter-spacing:2px;
-background:#6f4458;
-color:#fff0f6;
+}
+
+@media(max-width:900px){
+.page-title{font-size:2.5rem;}
+}
+
+@media(max-width:700px){
+.page-title{font-size:2rem;}
 }
 
 </style>
@@ -145,31 +156,45 @@ color:#fff0f6;
 
 <body>
 
-<nav>
+<header>
+<div class="nav-top">
+<div class="logo-wrap">
+<svg class="logo" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="100" y1="25" x2="100" y2="150" stroke="white" stroke-width="5"/>
+<line x1="40" y1="55" x2="160" y2="55" stroke="white" stroke-width="5"/>
+<circle cx="100" cy="25" r="10" fill="white"/>
+<line x1="60" y1="55" x2="45" y2="95" stroke="white" stroke-width="3"/>
+<line x1="140" y1="55" x2="155" y2="95" stroke="white" stroke-width="3"/>
+<path d="M25 100 Q45 130 65 100" stroke="white" stroke-width="4" fill="none"/>
+<path d="M135 100 Q155 130 175 100" stroke="white" stroke-width="4" fill="none"/>
+<circle cx="45" cy="88" r="12" stroke="white" stroke-width="3"/>
+<line x1="45" y1="100" x2="45" y2="118" stroke="white" stroke-width="3"/>
+<line x1="37" y1="110" x2="53" y2="110" stroke="white" stroke-width="3"/>
+<circle cx="155" cy="88" r="12" stroke="white" stroke-width="3"/>
+<line x1="163" y1="80" x2="176" y2="67" stroke="white" stroke-width="3"/>
+<line x1="168" y1="67" x2="176" y2="67" stroke="white" stroke-width="3"/>
+<line x1="176" y1="67" x2="176" y2="75" stroke="white" stroke-width="3"/>
+</svg>
 <div class="brand">MISS MATRIARCHY</div>
+</div>
 
+<nav>
 <ul>
 <li><a href="index.html">Home</a></li>
 <li><a href="womens-history.html">Women in History</a></li>
 <li><a href="feminism.html">Feminism Explained</a></li>
-<li><a href="misogyny.html">Misogyny & Misandry</a></li>
 <li><a href="#">Society & Psychology</a></li>
+<li><a href="misogyny.html">Misogyny & Misandry</a></li>
+<li><a href="#">Modern World</a></li>
 </ul>
 </nav>
-
-<header>
-
-<div class="tag">
-MISS MATRIARCHY
 </div>
 
-<h1>Women's History</h1>
-
-<p class="subtitle">
+<h1 class="page-title">Women's History</h1>
+<p class="page-subtitle">
 The world was never built by men alone.
 History simply forgot to mention many of the women who helped shape it.
 </p>
-
 </header>
 
 <section>
@@ -424,7 +449,7 @@ and Marie Curie's notebooks remain radioactive even today.
 </section>
 
 <footer>
-MISS MATRIARCHY
+Miss Matriarchy — Equality, History, Culture & Society
 </footer>
 
 </body>
